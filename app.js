@@ -37,7 +37,7 @@ return [num, answer]
 }
 
 // Here is the test for multiply(); uncomment it to run it
-testMultiply(5,9);
+// testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -54,11 +54,19 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-
+var sumOfTwo = sum(a,b)[0]
+var sumOfThree = sum(sumOfTwo, c)[0]
+var product = multiply(a,b,)[0]
+var productOfThree = multiply(product, c)[0]
+var sumString = a + " and " + b + " and " + c +  ' sum to '  + sumOfThree + '.'
+var productString = "The product of " + a + " and " + b + " and " + c + ' is ' +  productOfThree +  '.'
+ 
+return [sumOfThree, productOfThree, sumString, productString]
 }
 
+
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
