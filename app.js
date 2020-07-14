@@ -126,7 +126,7 @@ function multiplyArray(multArr) { //eslint-disable-line
 var arraySum = multiply(multArr[0], multArr[1])[0]
 var arraySumTwo = multiply(arraySum,  multArr[2])[0]
 var arraySumThree = multiply(arraySum, arraySumTwo)[0]
-console.log (arraySum, arraySumTwo, arraySumThree); 
+console.log (arraySum, arraySumTwo, arraySumThree);
 
 var sumArrayString = "The numbers 2,3,4 have a product of 24."
 console.log (sumArrayString);
